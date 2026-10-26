@@ -59,7 +59,7 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Zohaib Asghar - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -69,13 +69,13 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 \usepackage{import}
 
 % Personal data
-\name{[FIRST_NAME]}{[LAST_NAME]}
+\name{Zohaib}{Asghar}
 % If you have no address to list, DELETE this whole line. \address{}{}{} fails
 % with "There's no line here to end" on every moderncv version.
-\address{[YOUR_ADDRESS]}{}{}
-\phone[mobile]{[YOUR_PHONE]}
-\email{[YOUR_EMAIL]}
-\extrainfo{\href{[YOUR_LINKEDIN_URL]}{LinkedIn}, \href{[YOUR_GITHUB_URL]}{GitHub}}
+\address{Lahore, Punjab, Pakistan}{}{}
+\phone[mobile]{+92 322 9911442}
+\email{mzohaib0677@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/zohaib-asghar-dev/}{LinkedIn}, \href{https://github.com/zohaib-9323}{GitHub}, \href{https://zohaib-dev-portfolio.vercel.app/}{Portfolio}}
 
 \begin{document}
 \makecvtitle
@@ -137,11 +137,14 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 **Create 2-3 profile statement templates for your main role types:**
 
 <!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For MERN / Full Stack Developer roles:**
+> Full-stack developer with 3+ years of experience building production apps on the MERN stack and NestJS, from React and Next.js interfaces to secure REST APIs and the CI/CD that ships them. Delivered multi-tenant SaaS platforms with RBAC, JWT authentication and tenant isolation, wrote 30+ JWT-secured and 25+ RBAC-protected endpoints, cut API response time by about 35% with Redis caching and deployment time by about 50% with GitHub Actions, Docker and AWS. Works directly with clients and as part of a team.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For AI Engineer / LLM Engineer / AI Full Stack roles:**
+> Full-stack developer specialising in shipping AI features into production products. Built a complete RAG system (chunking, embeddings, semantic search, admin tooling for prompts, knowledge testing and versioning) in one week for a multi-tenant SaaS platform, the backend of an AI chatbot management platform, and an LLM requirements-analysis tool returning validated structured JSON via OpenRouter. Combines LLM APIs, the Claude API and MCP with a solid TypeScript, Node.js/NestJS and React/Next.js foundation, and holds a Claude Code Mastery Certificate for AI-assisted development.
+
+**For Backend Engineer (Node.js / NestJS) roles:**
+> Backend-focused developer with 3+ years building secure Node.js, Express and NestJS APIs on MongoDB and Redis. Owned RBAC, JWT authentication and tenant isolation on a multi-tenant SaaS platform whose third-party penetration test found only 4 to 5 low-severity configuration issues, and integrated Stripe, QuickBooks/Xero and Firebase. Cut average API response time by about 35% with Redis caching and deployment time by about 50% with CI/CD.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 

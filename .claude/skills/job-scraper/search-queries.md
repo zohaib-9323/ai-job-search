@@ -1,6 +1,5 @@
 # Search Queries for Job Scraper
 
-<!-- SETUP: Customize these queries based on your skills, target roles, and location -->
 
 ## Installed portal CLIs (primary for `/scrape`)
 
@@ -12,69 +11,89 @@ The `site:` query templates in this file are the **WebSearch fallback** — for 
 
 ## Search Sites
 
-Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by `linkedin-search` CLI
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+Primary:
+- **linkedin.com/jobs** - LinkedIn listings, filter Pakistan / Lahore and "Remote"; also covered by the `linkedin-search` CLI
+- **freehire** - covered by the `freehire-search` CLI
+- **rozee.pk** - Pakistan's largest job board; covered by the `rozee-search` CLI (use `-l Lahore`, or put `remote` in the query). The `site:rozee.pk` queries below are the fallback if the CLI fails
+- **pk.indeed.com** - Indeed Pakistan (WebSearch fallback)
+
+Remote-first boards (WebSearch fallback):
+- **weworkremotely.com**, **remoteok.com**, **wellfound.com** (AngelList), **arc.dev**, **turing.com/jobs**, **remote.co**
 
 Secondary (company career pages via Google):
-- Direct Google searches with `site:` filters for known target companies
+- Direct Google searches with `site:` filters for target companies, when any are added
 
 ## Query Categories
 
-Queries are grouped by priority. Write **each category in every language from your Languages table** (see Language scope above). Combine each query with your location terms (e.g. your city, region, or metro area) where the site supports it.
+Queries are grouped by priority. The candidate works in English (fluent) and Urdu (native); Pakistani and international tech postings are almost always in English, so English queries cover the market. Every query is run twice where the site supports it: once for **Lahore** and once for **Remote**.
 
-**Organize by function, not job title.** The same underlying work carries different titles across companies and markets (a "Data Scientist" role at one employer may be posted as "Insights Analyst" or "Data Consultant" at another). Name each priority category after the function it covers, and list several plausible job titles as query variants within that category rather than betting an entire priority tier on one exact title string.
+### Priority 1: Full-stack JavaScript product engineering (MERN / Next.js)
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
-
-These match your strongest and most desired career direction.
+The strongest and most desired direction.
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_2]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_COUNTRY]
+site:linkedin.com/jobs "MERN Stack Developer" Lahore
+site:linkedin.com/jobs "Full Stack Developer" React Node.js Remote
+site:linkedin.com/jobs "Full Stack Engineer" Next.js Remote
+site:rozee.pk "MERN Stack Developer" Lahore
+site:rozee.pk "Full Stack Developer" Lahore
+site:pk.indeed.com "MERN Stack" Lahore
+site:weworkremotely.com "Full Stack" React Node
+site:remoteok.com "full stack" node react
 ```
 
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
+### Priority 2: AI / LLM application engineering
 
-These match your domain expertise.
-
-```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
-```
-
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
-
-Adjacent roles you could pivot into.
+Domain expertise: RAG, LLM integrations, AI features in SaaS.
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
+site:linkedin.com/jobs "AI Engineer" Node.js OR TypeScript Remote
+site:linkedin.com/jobs "AI Engineer" Lahore
+site:linkedin.com/jobs "LLM Engineer" OR "GenAI Engineer" Remote
+site:linkedin.com/jobs "AI Full Stack" Developer Remote
+site:linkedin.com/jobs "AI Integration Engineer" Remote
+site:rozee.pk "AI Engineer" Lahore
+site:wellfound.com "AI Engineer" TypeScript remote
+site:arc.dev "AI Engineer" remote
 ```
 
-### Priority 4: Broader Technical / Consulting
+### Priority 3: Adjacent roles
 
-Wider net for general technical roles.
+Backend-focused, frontend-focused and client-facing variants of the same skill set.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:linkedin.com/jobs "Backend Engineer" NestJS OR Node.js Remote
+site:linkedin.com/jobs "Node.js Developer" Lahore
+site:linkedin.com/jobs "Next.js Developer" Remote
+site:linkedin.com/jobs "Forward Deployed Engineer" Remote
+site:linkedin.com/jobs "Solutions Engineer" "AI" Remote
+site:rozee.pk "Node.js Developer" Lahore
+site:rozee.pk "React Developer" Lahore
+```
+
+### Priority 4: Broader JavaScript / TypeScript roles
+
+Wider net.
+
+```
+site:linkedin.com/jobs "Software Engineer" TypeScript Lahore
+site:linkedin.com/jobs "JavaScript Developer" Remote
+site:turing.com/jobs "Full Stack" Node React
+site:pk.indeed.com "Software Engineer" Node Lahore
+site:remote.co "full stack developer"
 ```
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+Home base: Lahore, Punjab, Pakistan. Any time zone is acceptable for remote work.
+- **Ideal:** Fully remote (worldwide or Pakistan-inclusive, any time zone); on-site/hybrid in Lahore (incl. Gulberg, DHA, Johar Town, Model Town, Arfa Software Technology Park)
+- **Acceptable:** Remote roles restricted to "Asia", "EMEA", "Pakistan" or "APAC" time zones - check the posting allows Pakistan
+- **Borderline:** "Remote" with occasional travel to an office outside Lahore - FLAG for the user
+- **Too far (exclude):** On-site or hybrid anywhere outside Lahore (Karachi, Islamabad, Rawalpindi, abroad); remote roles limited to residents of another country ("US only", "EU only", "must be based in UK")
+
+## Salary Filter
+
+If a posting states pay, exclude it when it is below **PKR 75,000/month** (local) or **USD 400/month** (remote). If no pay is stated, include it.
 
 ## Language Filter
 

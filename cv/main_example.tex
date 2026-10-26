@@ -1,8 +1,7 @@
-%% Example CV - [YOUR_NAME]
+%% Example CV - Zohaib Asghar
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
-%% SETUP: Run /setup to populate this with your actual information.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
@@ -40,7 +39,7 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Zohaib Asghar - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -48,15 +47,14 @@
 }}
 \usepackage[scale=0.80]{geometry}
 \usepackage{import}
+\usepackage{needspace}
 
 % personal data
-\name{[First]}{[Last]}
-% If you have no address to list, DELETE this whole line. \address{}{}{} fails
-% with "There's no line here to end" on every moderncv version.
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Zohaib}{Asghar}
+\address{Lahore, Punjab, Pakistan}{}{}
+\phone[mobile]{+92 322 9911442}
+\email{mzohaib0677@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/zohaib-asghar-dev/}{LinkedIn}, \href{https://github.com/zohaib-9323}{GitHub}, \href{https://zohaib-dev-portfolio.vercel.app/}{Portfolio}}
 
 \begin{document}
 
@@ -67,7 +65,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Full-stack developer with 3+ years of experience building production apps on the MERN stack and NestJS, from React and Next.js interfaces to secure REST APIs and the CI/CD that ships them. Delivered multi-tenant SaaS platforms with RBAC, JWT authentication and tenant isolation, and built AI-driven features including a complete RAG knowledge base and LLM integrations. Works directly with clients to understand their critical requirements, and as part of a team.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -77,15 +75,15 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Frontend}: TypeScript, JavaScript (ES6+), React, Next.js, Redux Toolkit, Zustand, Material UI, Tailwind CSS, Storybook, HTML5, CSS3, responsive design, PWA.
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Backend and Databases}: Node.js, Express.js, NestJS, REST APIs, WebSockets, JWT authentication, RBAC, Swagger/OpenAPI, multi-tenant architecture, SOLID principles, MongoDB, Mongoose, Redis, Prisma, Supabase, Firebase, Stripe, QuickBooks, Xero.
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{AI and LLM}: Claude API, OpenRouter, LLM APIs, prompt engineering, structured JSON outputs, Model Context Protocol (MCP), RAG pipelines, semantic search, embeddings, document chunking, vector databases.
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{DevOps and Testing}: Docker, GitHub Actions, CI/CD pipelines, AWS (EC2, S3), Vercel, Git, Trivy, Jest, Vitest, Playwright (E2E), Agile/Scrum.
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{AI-Assisted Development}: Claude Code (Claude Code Mastery Certificate, 2026), Cursor, Copilot, Codex.
 
 \end{itemize}
 
@@ -97,32 +95,76 @@
 \vspace{3pt}
 \begin{itemize}
 
-% --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{Sept 2024--Present}{Full Stack Developer / Software Engineer}{DevExcelIT Solutions}{Lahore, Pakistan}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1 - be specific, use numbers where possible]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-    \item {[Achievement or responsibility 4]}
+    \item {Built responsive interfaces in React, Next.js and TypeScript, using components, hooks and Redux Toolkit for state.}
+    \item {Wrote 30+ JWT-secured and 25+ RBAC-protected REST endpoints for the frontend apps to use.}
+    \item {Added Redis caching to the MongoDB/Mongoose endpoints and cut average response time by about 35\%.}
+    \item {Integrated Stripe billing and third-party AI APIs, with async error handling for slow model responses.}
+    \item {Set up CI/CD with GitHub Actions, Docker and AWS. Deployment time dropped by about 50\%.}
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{Aug 2023--Aug 2024}{Associate Software Engineer}{AOT Solutions (Pvt) Ltd}{Lahore, Pakistan}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
+    \item {Built React and Next.js UI screens and the Node.js, Express.js and MongoDB REST APIs behind them, end to end.}
+    \item {Fixed bugs in existing codebases and worked with the team to deliver on schedule.}
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     SELECTED PROJECTS
+% ============================================================
+
+\section{Selected Projects}
+\vspace{3pt}
+\begin{itemize}
+
+\needspace{5\baselineskip}
+\item{\cventry{2026--Present}{Multi-Tenant SaaS Platform}{Trade Harmonizer}{\href{https://dev.tradeharmonizer.co.uk}{dev.tradeharmonizer.co.uk}}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Multi-tenant SaaS for shipment management, product databases, C88 documentation, denied-party screening and billing (NestJS, MongoDB/Mongoose, Stripe, QuickBooks/Xero, Firebase).}
+    \item {Owned RBAC, JWT authentication and tenant isolation for the admin, owner and company-user roles.}
+    \item {Built a complete RAG system in one week: chunking, embeddings and semantic search, plus admin tools for guidance prompts, knowledge testing, publishing and version history.}
+    \item {Ran Trivy scans and a third-party penetration test, which found only 4 to 5 low-severity configuration issues.}
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{2025}{AI Chatbot Management Platform}{Capture AI}{\href{https://app.cptr.ai}{app.cptr.ai}}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
+    \item {Built the NestJS/Node.js backend for an AI SaaS platform: dashboard analytics, chatbot configuration, AI knowledge base, engagement workflows and subscriptions.}
+    \item {Integrated Stripe billing and added server-side handling so workflows keep running when AI responses are slow or fail.}
+\end{itemize}}}
+
+\vspace{3pt}
+
+\needspace{5\baselineskip}
+\item{\cventry{2025}{AI Requirements Analysis Tool}{Requirement Analyst}{\href{https://github.com/zohaib-9323/Requirment-Analyst}{GitHub}}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Node.js/Express backend that flags missing requirements, ambiguities, edge cases and business-logic gaps, using OpenRouter Chat Completions to return validated structured JSON across 5 analysis categories, with Markdown report export.}
+\end{itemize}}}
+
+\vspace{3pt}
+
+\needspace{5\baselineskip}
+\item{\cventry{2026}{Offline-First PWA and Android App}{TaskFlow}{\href{https://github.com/zohaib-9323/taskflow}{GitHub}}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Next.js 16, React 19, TypeScript, IndexedDB and a hand-written service worker; shipped to Android as a Trusted Web Activity with no native code.}
+    \item {59 unit/integration tests (Vitest) and 14 E2E tests (Playwright). Lighthouse mobile: 94 performance, 100 accessibility, 100 best practices, 100 SEO.}
+\end{itemize}}}
+
+\vspace{3pt}
+
+\needspace{5\baselineskip}
+\item{\cventry{Final Year}{AI Meal Planning Platform (Final Year Project)}{RecipeGes}{\href{https://github.com/zohaib-9323/RecipeGes}{GitHub}}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Next.js monorepo platform that suggests recipes with tutorial links based on users' health conditions and food preferences, with weekly meal plans and reminders.}
 \end{itemize}}}
 
 \end{itemize}
@@ -135,14 +177,15 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
+\needspace{5\baselineskip}
+\item{\cventry{2021--2025}{BS Computer Software Engineering}{Minhaj University}{Lahore, Pakistan}{}{\vspace{1pt}
+CGPA 3.66/4.00. Coursework: Software Engineering, Database Systems, Web Development, OOP, Data Structures \& Algorithms.
 }}
 
 \vspace{3pt}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
+\item{\cventry{2026}{Claude Code Mastery Certificate}{LWS Academy}{}{}{\vspace{1pt}
+Completed January 2026. Training in AI-assisted development and Claude Code workflows.
 }}
 
 \end{itemize}
@@ -154,27 +197,7 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item {[Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).}
-\end{itemize}
-
-% ============================================================
-%     PUBLICATIONS (optional)
-% ============================================================
-
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item {[Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
-
-\section{Honors and Awards}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item {Urdu (native), English (fluent).}
 \end{itemize}
 
 % ============================================================

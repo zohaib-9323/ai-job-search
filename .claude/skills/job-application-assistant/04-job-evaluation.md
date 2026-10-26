@@ -60,9 +60,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** MERN stack (MongoDB, Express.js, React, Node.js), Next.js, TypeScript, NestJS, REST API design, JWT/RBAC auth, multi-tenant SaaS, Redux Toolkit, Tailwind CSS, Redis, Stripe, LLM API integration, RAG pipelines (chunking, embeddings, semantic search), structured LLM outputs, Claude API / OpenRouter
+**Moderate match areas:** Docker, GitHub Actions CI/CD, AWS (EC2, S3), Vercel, Prisma, Supabase, Firebase, WebSockets, Jest/Vitest/Playwright testing, PWA, MCP, vector databases, QuickBooks/Xero integrations
+**Weak match areas:** Python-heavy ML (model training, PyTorch/TensorFlow, MLOps), SQL-first backends (PostgreSQL/MySQL as main DB), Java/.NET/PHP/Go stacks, native mobile (Swift/Kotlin, React Native), Kubernetes and advanced cloud infra (GCP/Azure), LangChain/LlamaIndex-specific frameworks, data engineering
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +74,9 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Full Stack / MERN Developer, Node.js/NestJS Backend Developer, React/Next.js Developer, AI-integrated SaaS product development (3+ years, mid-level)
+**Moderate:** AI Engineer / LLM Engineer roles focused on application-layer work (RAG, LLM integration, agents), AI Integration Engineer, Solutions / Forward Deployed Engineer (client-facing)
+**Entry-level:** ML Engineer roles requiring model training or research, DevOps/Platform Engineer, Tech Lead / Engineering Manager, roles asking for 5+ years or Senior/Lead titles (stretch - evaluate case by case)
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -91,8 +91,10 @@ Does the role and company culture match the behavioral profile?
 **Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- Within commute range: PASS
-- Remote with occasional office: PASS
+- Fully remote, any company location and any time zone (incl. US/UK/EU/Gulf hours): PASS
+- On-site or hybrid in Lahore: PASS
+- Remote but restricted to residents of another country ("US only", "EU residents only", "must be located in X"): FAIL - quote the restriction
+- On-site or hybrid anywhere outside Lahore (Karachi, Islamabad, abroad): FAIL (deal-breaker)
 - Requires relocation: FAIL (deal-breaker)
 - Frequent international travel: FLAG (discuss with user)
 
@@ -107,19 +109,24 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Grow as a MERN / Full Stack Developer on real products (SaaS, AI-powered apps)
+- Move further into AI engineering: RAG, LLM integrations, agents, AI features in production
+- Land a remote role with an international company, or a strong on-site/hybrid role in Lahore
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: building full-stack features end to end, AI/LLM features (RAG, chatbots, structured outputs), SaaS architecture (auth, RBAC, multi-tenancy, billing), working with clients on requirements
+- Tasks that drain: (not stated by the candidate) - assume pure legacy maintenance and non-development roles are less attractive
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Currently employed, so no urgency to accept a weak offer. Salary floor: **PKR 75,000/month** for local roles, **USD 400/month** for remote/foreign roles. Flag any posting with stated pay below the floor.
+- **Flexibility**: Open to any time zone for remote work. On-site only within Lahore.
+- **Professional development**: AI engineering depth, product ownership, working with international teams
+
+### Deal-breakers (hard FAIL)
+- On-site or hybrid work outside Lahore
+- Relocation required
+- Stated pay below PKR 75,000/month (local) or USD 400/month (remote)
 
 ### 6. Salary Benchmark (Optional)
 

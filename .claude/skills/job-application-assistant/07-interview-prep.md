@@ -14,44 +14,63 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 ## Ready-Made STAR Examples
 
-<!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
+<!-- Drafted by /setup from the CV (2026-10-25). Facts come from the CV; the Situation framing and the "why" details are for Zohaib to fill in or correct in their own words before using them. -->
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 1. Trade Harmonizer RAG system in one week (AI engineering, speed, ownership)
+**S:** Trade Harmonizer, a multi-tenant SaaS platform for shipment management and trade compliance (C88 documentation, denied-party screening), needed an AI knowledge base. *[Add: who asked for it, and why one week?]*
+**T:** Design and deliver the complete RAG system on a one-week timeline.
+**A:** Built the full pipeline: document chunking, embeddings and semantic search. Added admin tools for guidance prompts, knowledge testing, publishing and version history so non-engineers could manage the knowledge base.
+**R:** Delivered a complete, working RAG system in one week. *[Add: usage or feedback since launch, if known]*
+**Use for:** "Tell me about an AI/LLM feature you built", "Describe working under a tight deadline", "Your most complex project"
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 2. Multi-tenant security: RBAC, JWT and tenant isolation (security, architecture)
+**S:** Trade Harmonizer serves several companies on one platform, each with admin, owner and company-user roles, so a data leak between tenants would be critical.
+**T:** Own authentication, authorization and tenant isolation.
+**A:** Implemented JWT authentication, role-based access control for the three roles, and tenant isolation in the NestJS/MongoDB backend. Ran Trivy security scans and supported a third-party penetration test.
+**R:** The penetration test found only 4 to 5 low-severity configuration issues. *[Add: how they were fixed]*
+**Use for:** "How do you approach security?", "Explain a system design decision", "Multi-tenancy experience"
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 3. Redis caching cut API response time ~35% (performance, problem solving)
+**S:** At DevExcelIT Solutions, MongoDB/Mongoose endpoints used by the frontend apps were slower than they should be. *[Add: which endpoints, how it was noticed]*
+**T:** Improve API response time without rewriting the data layer.
+**A:** Added Redis caching to the MongoDB/Mongoose endpoints. *[Add: cache keys, invalidation strategy, TTLs]*
+**R:** Average response time dropped by about 35%.
+**Use for:** "Tell me about a performance optimization", "How do you debug slow APIs?", "Caching strategies"
 
-<!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
+### 4. CI/CD pipeline cut deployment time ~50% (DevOps, process improvement)
+**S:** Deployments at DevExcelIT Solutions were slow and largely manual. *[Confirm and add detail]*
+**T:** Make shipping faster and more reliable.
+**A:** Set up CI/CD with GitHub Actions, Docker and AWS (EC2, S3).
+**R:** Deployment time dropped by about 50%.
+**Use for:** "How have you improved a team process?", "DevOps experience", "Initiative beyond your assigned tasks"
+
+### 5. Capture AI: keeping workflows alive when the AI is slow (resilience, AI in production)
+**S:** Capture AI is an AI SaaS platform for chatbot automation and lead management that depends on third-party LLM APIs, which can respond slowly or fail.
+**T:** Build the backend so that customer workflows and billing keep working anyway.
+**A:** Built the NestJS/Node.js backend (dashboard analytics, chatbot configuration, AI knowledge base, engagement workflows, subscriptions), integrated Stripe, and added server-side handling for slow or failed AI responses.
+**R:** Workflows keep running when AI responses are slow or fail. *[Add: concrete impact]*
+**Use for:** "Handling third-party API failures", "Building with LLMs in production", "Error handling"
+
+### 6. TaskFlow: offline-first PWA shipped to Android with no native code (quality, testing)
+**S:** Personal project to build a fully offline-capable task manager.
+**T:** Make it installable, offline-first, well tested and available on Android without writing a native app.
+**A:** Built it with Next.js 16, React 19, TypeScript, IndexedDB and a hand-written service worker; wrapped it as a Trusted Web Activity with Bubblewrap; wrote 59 Vitest unit/integration tests and 14 Playwright E2E tests.
+**R:** Lighthouse mobile scores of 94 performance, 100 accessibility, 100 best practices, 100 SEO; every web deploy updates the Android app.
+**Use for:** "How do you approach testing?", "A project you're proud of", "Frontend performance / accessibility"
 
 ## Common Tough Questions
 
-### "Why did you leave [previous company]?"
-> [PREPARE YOUR ANSWER - be honest, forward-looking, no negativity about former employer]
+### "Why are you looking to leave DevExcelIT Solutions?"
+> Draft (edit in your own words): "I've learned a lot there - multi-tenant SaaS, a full RAG system, CI/CD. I'm now looking for a role where I can go deeper into AI-powered products and work with a larger or international team." Stay positive about DevExcelIT.
 
 ### "You don't have [specific skill/experience]."
-> [PREPARE YOUR ANSWER - acknowledge the gap, bridge to adjacent experience, show willingness to learn]
+> Acknowledge the gap honestly, bridge to the closest thing you have done (e.g. no PostgreSQL in production -> Prisma and Supabase, solid data modeling in MongoDB), and point to how fast you shipped new tech before (RAG system in one week).
 
 ### "Where do you see yourself in 5 years?"
-> [PREPARE YOUR ANSWER - show ambition aligned with the role's growth path]
+> Draft: a senior full-stack / AI engineer who owns the architecture of AI-powered products. *[Personalize]*
 
 ### "What's your biggest weakness?"
-> [PREPARE YOUR ANSWER - genuine weakness with concrete mitigation strategy]
+> *[Prepare a genuine one with a concrete mitigation - not provided during setup]*
 
 ### "Why this company specifically?"
 > Customize per company. Must reference: specific projects, company values, market position, or team structure. Never give a generic answer.

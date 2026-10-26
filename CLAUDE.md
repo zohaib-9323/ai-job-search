@@ -1,10 +1,10 @@
-# Job Application Assistant for [YOUR_NAME]
+# Job Application Assistant for Zohaib Asghar
 
 <!-- SETUP: This file is populated by running /setup -->
 <!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Zohaib Asghar, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,79 +13,86 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Zohaib Asghar
+- **Location:** Lahore, Punjab, Pakistan (remote anywhere / any time zone, or on-site within Lahore only)
+- **Contact:** mzohaib0677@gmail.com | +92 322 9911442 | [LinkedIn](https://www.linkedin.com/in/zohaib-asghar-dev/) | [GitHub](https://github.com/zohaib-9323) | [Portfolio](https://zohaib-dev-portfolio.vercel.app/)
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
-  <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
-  working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
-  undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
-  lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
-  04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+  | Urdu | Native |
+  | English | Fluent |
+- **CV language:** English
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Status:** Employed - Full Stack Developer / Software Engineer at DevExcelIT Solutions (since Sept 2024), looking for the next role
+- **LinkedIn headline:** "Full-Stack Developer (React + Node.js)"
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **BS in Computer Software Engineering** (Nov 2021 - Jun 2025) - Minhaj University, Lahore
+  - CGPA 3.66/4.00
+  - Final year project: RecipeGes - AI meal planning and recipe platform (Next.js)
+  - Topics: Software Engineering, Database Systems, Web Development, OOP, Data Structures & Algorithms
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Full Stack Developer / Software Engineer** (Sept 2024 - Present) - **DevExcelIT Solutions** (Lahore, Pakistan)
+  - React, Next.js and TypeScript interfaces with Redux Toolkit
+  - 30+ JWT-secured and 25+ RBAC-protected REST endpoints
+  - Redis caching on MongoDB/Mongoose endpoints: ~35% faster average response time
+  - Stripe billing and third-party AI API integrations
+  - CI/CD with GitHub Actions, Docker and AWS: ~50% faster deployments
+- **Associate Software Engineer** (Aug 2023 - Aug 2024) - **AOT Solutions (Pvt) Ltd** (Lahore, Pakistan)
+  - React/Next.js UI screens and Node.js/Express/MongoDB REST APIs, end to end
+  - Bug fixing in existing codebases, on-schedule team delivery
+
+### Selected Projects
+- **Trade Harmonizer** (2026-) - multi-tenant SaaS (NestJS, MongoDB, RBAC/JWT/tenant isolation, Stripe, QuickBooks/Xero); complete RAG system built in one week; pen test found only 4-5 low-severity config issues
+- **Capture AI** (2025) - backend of an AI chatbot management SaaS (NestJS, Stripe, LLM APIs)
+- **Requirement Analyst** (2025) - AI requirements analysis tool (Node.js, OpenRouter, structured JSON outputs)
+- **TaskFlow** (2026) - offline-first PWA + Android TWA (Next.js 16, React 19, IndexedDB); 59 unit + 14 E2E tests; Lighthouse 94/100/100/100
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** TypeScript, JavaScript, React, Next.js, Node.js, Express.js, NestJS, MongoDB/Mongoose, REST APIs, JWT/RBAC, multi-tenant architecture
+- **Secondary:** Redis, Prisma, Supabase, Firebase, WebSockets, Redux Toolkit, Zustand, Tailwind CSS, Material UI, Docker, GitHub Actions, AWS (EC2, S3), Vercel, Jest, Vitest, Playwright
+- **Domain:** AI/LLM application engineering (Claude API, OpenRouter, RAG pipelines, embeddings, semantic search, vector databases, structured JSON outputs, MCP); B2B SaaS (billing with Stripe, QuickBooks/Xero)
+- **Software:** Claude Code, Cursor, Copilot, Codex, Git/GitHub, Storybook, Swagger/OpenAPI, Trivy, Agile/Scrum
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- **Claude Code Mastery Certificate** - LWS Academy - completed January 2026
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- None
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- None listed
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Flexible collaborator** - works well both inside a team and directly with clients
+- **End-to-end owner** - builds UI, API, data layer and CI/CD; owned auth and tenant isolation on a production SaaS
+- **Strengths:** Client requirements gathering, fast delivery of AI features, security-aware backend work, testing discipline
+- **Growth areas:** 3 years of experience (early mid-level); limited large-team / enterprise exposure
+- **Thrives in:** Product-building teams (SaaS, AI-first), remote-friendly setups, roles with full-stack ownership
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Building AI-powered products: RAG, LLM integrations, chatbots, AI agents
+- Full-stack SaaS engineering with the MERN stack and Next.js
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- AI / LLM product companies and AI-first startups (remote, international)
+- SaaS and software houses / IT services companies in Lahore and remote (e.g. product and outsourcing firms)
+- Remote-hiring platforms and international startups hiring Pakistani engineers
+
+### Target Roles
+- MERN Stack Developer, Full Stack Developer (React/Node), Full Stack Engineer
+- AI Engineer, LLM / GenAI Engineer, AI Full Stack Developer, AI Integration Engineer
+- Backend Engineer (Node.js/NestJS), Next.js Developer, Forward Deployed / Solutions Engineer
+
+### Salary Floor
+- Local (PKR): 75,000 / month minimum
+- Remote (USD): 400 / month minimum
 
 ### Deal-breakers
-<!-- Hard constraints on job search. Language requirements are handled separately and
-automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- On-site or hybrid work outside Lahore
+- Relocation
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)

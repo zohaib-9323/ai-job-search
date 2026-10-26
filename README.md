@@ -1,3 +1,42 @@
+# AI Job Search: Zohaib Asghar's Workspace
+
+This is my personal job-search workspace, built on [AI Job Search](https://github.com/MadsLorentzen/ai-job-search) by Mads Lorentzen. Claude Code acts as my career advisor and application assistant. It evaluates job postings, tailors my LaTeX CV and cover letters, scrapes job portals and preps me for interviews.
+
+**About me:** Full-Stack Developer (React + Node.js) based in Lahore, Pakistan, working with TypeScript, Next.js, NestJS, MongoDB and AI/LLM integrations (RAG, Claude API, OpenRouter).
+[LinkedIn](https://www.linkedin.com/in/zohaib-asghar-dev/) · [GitHub](https://github.com/zohaib-9323) · [Portfolio](https://zohaib-dev-portfolio.vercel.app/)
+
+## What I changed from upstream
+
+- **Candidate profile:** `CLAUDE.md` and the `job-application-assistant` skill files now hold my profile, skills, target roles, salary floor and deal-breakers.
+- **Pakistan job portal:** a new `rozee-search` skill (`.agents/skills/rozee-search/`) searches [ROZEE.PK](https://www.rozee.pk) for jobs in Lahore, Karachi, Islamabad and remote roles. It needs only `bun`.
+- **Search queries:** the `job-scraper` queries are tuned for MERN, full-stack, AI/LLM and backend Node.js roles.
+- **CV template:** `cv/main_example.tex` is adapted to my experience.
+
+## Quick start
+
+```bash
+git clone https://github.com/zohaib-9323/ai-job-search.git
+cd ai-job-search
+claude            # open Claude Code in the repo
+```
+
+Then inside Claude Code:
+
+| Command | What it does |
+|---------|--------------|
+| `/scrape` | Search the job portals (including ROZEE.PK) for new postings |
+| `/rank` | Score scraped postings against my profile |
+| `/apply <url>` | Evaluate fit, then draft a tailored CV and cover letter |
+| `/interview` | Prepare talking points and questions for an interview |
+
+CVs compile with `lualatex` and cover letters with `xelatex`. See [SETUP.md](SETUP.md) for the full setup.
+
+> **Privacy:** tailored CVs, cover letters, the job tracker and reports are gitignored and stay on my machine. Only the framework and my profile are published.
+
+---
+
+*Everything below is the original upstream documentation.*
+
 <p align="center">
   <img src="assets/mascot/pip_flight_loop.gif" alt="Pip, the courier bird" width="200">
 </p>
